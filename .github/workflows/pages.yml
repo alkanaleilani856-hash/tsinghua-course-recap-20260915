@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir dist
           cp index.html journal.html dist/
+          cp -R assets dist/assets
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
